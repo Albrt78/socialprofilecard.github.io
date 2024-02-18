@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    font-family: "Inter", sans-serif;
+}
+
+#card {
+    width: 24rem;
+    background-color: hsl(0, 0%, 12%);
+    padding-inline: 2.5rem;
+    padding-block-end: 1rem;
+    border-radius: 0.5rem;
+    margin-block: 10.7rem;
+}
+
+#card #profile-img {
+    --profile-image: 92px;
+
+    width: var(--profile-image);
+    height: var(--profile-image);
+    margin-top: 2.3rem;
+}
+
+#card-body #title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+#card-body #address {
+    color: hsl(75, 94%, 57%);
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.01rem;
+}
+
+#card-body #quote {
+    font-size: 0.87rem;
+}
+
+#card #button-group {
+    font-weight: 600;
+}
+
+#card #button-group button {
+    background-color: hsl(0, 0%, 20%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-block: 0.7rem;
+    border-radius: 1.3rem;
+    width: 100%;
+}
+
+#card #button-group button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#card #button-group button:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+#card #button-group button:hover a {
+    color: hsl(0, 0%, 20%);
+}
+
+/* Media Query */
+@media (max-width: 575.98px) {
+    #card {
+        max-width: 100%;
+        margin-inline: 1rem;
+        margin-block: 0rem;
+    }
+}
