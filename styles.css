@@ -83,6 +83,52 @@ body {
     #card {
         max-width: 100%;
         margin-inline: 1rem;
-        margin-block: 0rem;
+        margin-block: 0;
+    }
+}
+
+@media (max-width: 375.98px) {
+    #card {
+        padding-inline: 2rem;
+    }
+
+    #card #profile-img {
+        margin-top: 1.9rem;
+    }
+
+    #card-body #quote {
+        margin-top: -0.5rem;
+    }
+}
+
+@media (max-width: 320.98px) {
+    #card {
+        padding-inline: 1.5rem;
+        padding-block-end: 0;
+        margin-block: 1rem;
+    }
+
+    #card #profile-img {
+        --profile-image: 70px;
+        margin-top: 1.5rem;
+    }
+
+    #card-body #title {
+        font-size: 1.3rem;
+        margin-top: 0;
+    }
+
+    #card-body #address {
+        font-size: 0.7rem;
+    }
+
+    #card-body #quote {
+        margin-top: -0.7rem;
+        font-size: 0.7rem;
+    }
+
+    #card #button-group button {
+        padding-block: 0.7rem;
+        font-size: 0.7rem;
     }
 }
